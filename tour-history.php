@@ -30,7 +30,7 @@ foreach($results as $result)
 	$date1=date_create("$cdate");
 	$date2=date_create("$fdate");
  $diff=date_diff($date1,$date2);
-echo $df=$diff->format("%a");
+$df=$diff->format("%a");
 if($df>1)
 {
 $status=2;
