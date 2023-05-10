@@ -47,7 +47,7 @@ $msg="Booking Cancelled successfully";
 }
 else
 {
-$error="You can't cancel booking before 24 hours";
+$error="You can't cancel the booking before 24 hours";
 }
 }
 }
