@@ -13,7 +13,7 @@ include('includes/config.php');
 <script type="applijewelleryion/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <script>
 	function scrollDown(){
-		var targetElement=document.getElementByClassName('holiday');
+		var targetElement=document.getElementById('kbx');
 		targetElement.scrollIntoView({behavior: 'smooth'});
 	}
 	</script>
@@ -76,7 +76,7 @@ include('includes/config.php');
 			</div>
 			<div class="rup-rgt">
 				<h3>UP TO Rs. 2500 OFF</h3>
-				<h4><a href="offers.html">US APP OFFER</a></h4>
+				<h4><a href="offers.html">IN APP OFFER</a></h4>
 			
 			</div>
 				<div class="clearfix"></div>
@@ -91,7 +91,7 @@ include('includes/config.php');
 
 <!---holiday---->
 <div class="container">
-	<div class="holiday">
+	<div id="kbx" class="holiday">
 	
 
 
