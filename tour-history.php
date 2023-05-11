@@ -78,6 +78,12 @@ $error="You can't cancel the booking before 24 hours";
 		 new WOW().init();
 	</script>
 
+	<!-- <script>
+		 function pay(){
+                windows.location.href = "https://www.buymeacoffee.com/sudeep7217u";
+            }
+	</script> -->
+
   <style>
 		.errorWrap {
     padding: 10px;
@@ -127,6 +133,7 @@ $error="You can't cancel the booking before 24 hours";
 <th>Booking Date</th>
 <th>Action</th>
 </tr>
+
 <?php 
 
 $uemail=$_SESSION['login'];;
@@ -135,6 +142,8 @@ $query = $dbh->prepare($sql);
 $query -> bindParam(':uemail', $uemail, PDO::PARAM_STR);
 $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
+
+
 $cnt=1;
 if($query->rowCount() > 0)
 {
@@ -157,11 +166,11 @@ echo "Confirmed";
 }
 if($result->status==2 and  $result->cancelby=='u')
 {
-echo "Canceled by you at " .$result->upddate;
+echo "Cancelled by you at " .$result->upddate;
 } 
 if($result->status==2 and $result->cancelby=='a')
 {
-echo "Canceled by admin at " .$result->upddate;
+echo "Cancelled by admin at " .$result->upddate;
 
 }
 ?></td>
@@ -170,7 +179,9 @@ echo "Canceled by admin at " .$result->upddate;
 {
 	?><td>Cancelled</td>
 <?php } else {?>
-<td><a href="tour-history.php?bkid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Do you really want to cancel booking')" >Cancel</a></td>
+<td><a href="tour-history.php?bkid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Do you really want to cancel booking')" >Cancel</a> /  <a href="xyz/pay.php">
+         Pay
+    </a></td>
 <?php }?>
 </tr>
 <?php $cnt=$cnt+1; }} ?>
@@ -182,7 +193,9 @@ echo "Canceled by admin at " .$result->upddate;
 		
 	</div>
 </div>
-<!--- /privacy ---->
+<!--- /privacy 
+"https://www.buymeacoffee.com/sudeep7217u"
+---->
 <!--- footer-top ---->
 <!--- /footer-top ---->
 <?php include('includes/footer.php');?>
