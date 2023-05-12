@@ -3,7 +3,7 @@
 <div class="top-header">
 	<div class="container">
 		<ul class="tp-hd-lft wow fadeInLeft animated" data-wow-delay=".5s">
-			<li class="hm"><a href="index.html"><i class="fa fa-home"></i></a></li>
+			<li class="hm"><a href="page1.php"><i class="fa fa-home"></i></a></li>
 			<li class="prnt"><a href="profile.php">My Profile</a></li>
 				<li class="prnt"><a href="change-password.php">Change Password</a></li>
 			<li class="prnt"><a href="tour-history.php">My Tour History</a></li>
@@ -68,12 +68,13 @@
 				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 					<nav class="cl-effect-1">
 						<ul class="nav navbar-nav">
-							<li><a href="index.php">Home</a></li>
-							<li><a href="page.php?type=aboutus">About</a></li>
-								<li><a href="package-list.php">Tour Packages</a></li>
-								<li><a href="page.php?type=privacy">Privacy Policy</a></li>
-								<li><a href="page.php?type=terms">Terms of Use</a></li>
-								<li><a href="page.php?type=contact">Contact Us</a></li>
+							<li><a href="page1.php" style="transition: all 0.3s ease-in-out;">Home</a></li>
+							<li><a href="page.php?type=aboutus" style="transition: all 0.3s ease-in-out;">About</a></li>
+								<li><a href="package-list.php" style="transition: all 0.3s ease-in-out;">Tour Packages</a></li>
+								<li><a href="gallery.php" style="transition: all 0.3s ease-in-out;">Gallery</a></li>
+								<li><a href="page.php?type=privacy" style="transition: all 0.3s ease-in-out;">Privacy Policy</a></li>
+								<li><a href="page.php?type=terms" style="transition: all 0.3s ease-in-out;">Terms of Use</a></li>
+								<li><a href="page.php?type=contact" style="transition: all 0.3s ease-in-out;">Contact Us</a></li>
 								<?php if($_SESSION['login'])
 {?>
 								<li>Need Help?<a href="#" data-toggle="modal" data-target="#myModal3"> / Write Us </a>  </li>
