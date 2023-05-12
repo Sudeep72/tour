@@ -160,9 +160,11 @@ foreach($results as $result)
 								<td><?php if($result->status==0)
 {
 echo "Pending";
+$_SESSION["confirmed"] = false;
 }
 if($result->status==1)
 {
+$_SESSION["confirmed"] = true;
 echo "Confirmed";
 }
 if($result->status==2 and  $result->cancelby=='a')

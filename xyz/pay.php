@@ -2,11 +2,12 @@
 session_start();
 error_reporting(0);
 include('../includes/config.php');
+$trd=$_SESSION["trd"];
 ?>
 
     
 
-<?php $sql = "SELECT * from tbltourpackages where PackageName = 'Indonesia'";
+<?php $sql = "SELECT * from tbltourpackages where packagename = '$trd'";
 $query = $dbh->prepare($sql);
 $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
@@ -35,7 +36,8 @@ foreach($results as $result)
 			</div>
             
 
-<?php }} ?>
+<?php 
+}} ?>
 
 <!DOCTYPE HTML>
 <html>

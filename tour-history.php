@@ -156,8 +156,12 @@ foreach($results as $result)
 <td><?php echo htmlentities($result->fromdate);?></td>
 <td><?php echo htmlentities($result->todate);?></td>
 <td><?php echo htmlentities($result->comment);?></td>
+<?php $_SESSION["trd"]=$result->packagename;?>
+<!-- <?php $confirmed = $_SESSION["confirmed"];?> -->
+<?php $confirmed = false; ?>
 <td><?php if($result->status==0)
 {
+$confirmed = true;
 echo "Pending";
 }
 if($result->status==1)
@@ -179,12 +183,14 @@ echo "Cancelled by admin at " .$result->upddate;
 {
 	?><td>Cancelled</td>
 <?php } else {?>
-<td><a href="tour-history.php?bkid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Do you really want to cancel booking')" >Cancel</a> /  <a href="xyz/pay.php">
-         Pay
+<td><a href="tour-history.php?bkid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Do you really want to cancel booking')" >Cancel</a> <?php if($confirmed == true){ ?> <a href="xyz/pay.php">
+         / Pay
     </a></td>
+<?php } ?>
 <?php }?>
 </tr>
-<?php $cnt=$cnt+1; }} ?>
+<?php 
+$cnt=$cnt+1; }} ?>
 	</table>
 		
 			</p>
