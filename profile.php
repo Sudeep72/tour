@@ -46,6 +46,11 @@ $msg="Profile Updated Successfully";
 	<script>
 		 new WOW().init();
 	</script>
+	<script>
+  setTimeout(function() {
+    document.querySelector('#myDiv').classList.add('hide');
+  }, 3000);
+</script>
 
   <style>
 		.errorWrap {
@@ -81,8 +86,8 @@ $msg="Profile Updated Successfully";
 	<div class="container">
 		<h3 class="wow fadeInDown animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">Change Password</h3>
 		<form name="chngpwd" method="post">
-		 <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
-				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
+		 <?php if($error){?><div id="myDiv" class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
+				else if($msg){?><div id="myDiv" class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
 
 <?php 
 $useremail=$_SESSION['login'];

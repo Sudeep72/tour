@@ -21,7 +21,7 @@
 	<div class="container">
 		<ul class="tp-hd-lft wow fadeInLeft animated" data-wow-delay=".5s">
 			<li class="hm"><a href="index.php"><i class="fa fa-home"></i></a></li>
-				<li class="hm"><a href="admin/index.php">Admin Login</a></li>
+				<li class="hm"><a href="adminsig.php">Admin Login</a></li>
 		</ul>
 		<ul class="tp-hd-rgt wow fadeInRight animated" data-wow-delay=".5s"> 
 			<li class="tol">Toll Number : +91-6380656451</li>				
