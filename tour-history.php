@@ -84,6 +84,36 @@ $error="You can't cancel the booking before 24 hours";
             }
 	</script> -->
 
+	<script>
+  setTimeout(function() {
+    document.querySelector('#myDiv').classList.add('hide');
+  }, 5000);
+</script>
+<style>
+  #myDiv {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+  #myDiv.hide {
+    opacity: 0;
+  }
+</style>
+
+<script>
+  setTimeout(function() {
+    document.querySelector('#suchi').classList.add('hide');
+  }, 5000);
+</script>
+<style>
+  #suchi {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+  #suchi.hide {
+    opacity: 0;
+  }
+</style>
+
   <style>
 		.errorWrap {
     padding: 10px;
@@ -118,8 +148,8 @@ $error="You can't cancel the booking before 24 hours";
 	<div class="container">
 		<h3 class="wow fadeInDown animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;">My Tour History</h3>
 		<form name="chngpwd" method="post" onSubmit="return valid();">
-		 <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
-				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
+		 <?php if($error){?><div id="myDiv" class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
+				else if($msg){?><div id="suchi" class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
 	<p>
 	<table border="1" width="100%">
 <tr align="center">

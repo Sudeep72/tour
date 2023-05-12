@@ -59,8 +59,40 @@ $error="Something went wrong. Please try again";
 						$(function() {
 						$( "#datepicker,#datepicker1" ).datepicker();
 						});
-					</script>
+			</script>
+
+<script>
+  setTimeout(function() {
+    document.querySelector('#myDiv').classList.add('hide');
+  }, 3000);
+</script>
+<style>
+  #myDiv {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+  #myDiv.hide {
+    opacity: 0;
+  }
+</style>
+
+<script>
+  setTimeout(function() {
+    document.querySelector('#suchi').classList.add('hide');
+  }, 3000);
+</script>
+<style>
+  #suchi {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+  }
+  #suchi.hide {
+    opacity: 0;
+  }
+</style>					
+
 	  <style>
+
 		.errorWrap {
     padding: 10px;
     margin: 0 0 20px 0;
@@ -91,8 +123,8 @@ $error="Something went wrong. Please try again";
 <!--- selectroom ---->
 <div class="selectroom">
 	<div class="container">	
-		  <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
-				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
+		  <?php if($error){?><div id="myDiv" class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
+				else if($msg){?><div id="suchi" class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
 <?php 
 $pid=intval($_GET['pkgid']);
 $sql = "SELECT * from tbltourpackages where PackageId=:pid";
@@ -167,7 +199,7 @@ foreach($results as $result)
 	</div>
 </div>
 <!--- /selectroom ---->
-<<!--- /footer-top ---->
+<!--- /footer-top ---->
 <?php include('includes/footer.php');?>
 <!-- signup -->
 <?php include('includes/signup.php');?>			
