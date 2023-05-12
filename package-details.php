@@ -152,11 +152,11 @@ foreach($results as $result)
 					<div class="ban-bottom">
 				<div class="bnr-right">
 				<label class="inputLabel">From</label>
-				<input class="date" id="datepicker" type="text" placeholder="dd-mm-yyyy"  name="fromdate" autocomplete="off" required="">
+				<input type="date"  type="text" placeholder="dd-mm-yyyy"  name="fromdate" autocomplete="off" required="">
 			</div>
 			<div class="bnr-right">
 				<label class="inputLabel">To</label>
-				<input class="date" id="datepicker1" type="text" placeholder="dd-mm-yyyy" name="todate" autocomplete="off" required="">
+				<input type="date"  type="text" placeholder="dd-mm-yyyy" name="todate" autocomplete="off" required="">
 			</div>
 			</div>
 						<div class="clearfix"></div>
