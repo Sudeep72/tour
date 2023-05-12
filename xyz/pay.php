@@ -85,7 +85,6 @@ foreach($results as $result)
             #paypal-payment-button{
          width: 1rem;
         position:absolute;
-        align:left;
         }
     }
 </style>
