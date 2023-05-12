@@ -505,8 +505,6 @@ foreach($results as $result)
     <img src="../images/t1.png" style="height:80%;position:absolute;right:0rem;top:2rem">
 </div>
 
-
-
 <script src="https://www.paypal.com/sdk/js?client-id=ATqJoT8uledW83BN2RvdA4o9tptMnGw4EUVlV1na6YHhKgqXEHcJXE8t0EZLGsDr4mybfMJ5nXxL10vQ&disable-funding=credit,card"></script>
 <script src="index.js"></script>
 </body>
