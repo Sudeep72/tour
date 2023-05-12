@@ -72,6 +72,7 @@
 							<li><a href="page.php?type=aboutus" style="transition: all 0.3s ease-in-out;">About</a></li>
 								<li><a href="package-list.php" style="transition: all 0.3s ease-in-out;">Tour Packages</a></li>
 								<li><a href="gallery.php" style="transition: all 0.3s ease-in-out;">Gallery</a></li>
+								<li><a href="testimonials.php" style="transition: all 0.3s ease-in-out;">Testimonial</a></li>
 								<li><a href="page.php?type=privacy" style="transition: all 0.3s ease-in-out;">Privacy Policy</a></li>
 								<li><a href="page.php?type=terms" style="transition: all 0.3s ease-in-out;">Terms of Use</a></li>
 								<li><a href="page.php?type=contact" style="transition: all 0.3s ease-in-out;">Contact Us</a></li>

@@ -1,9 +1,12 @@
-/* Gallery Styles */
+
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
 
 .gallery {
     max-width: 1200px;
     margin: 0 auto;
     padding: 50px;
+    font-family: 'Oswald';
   }
   
   .gallery h1 {

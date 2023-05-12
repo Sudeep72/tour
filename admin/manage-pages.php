@@ -92,7 +92,12 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 <script type="text/javascript" src="nicEdit.js"></script>
 <script type="text/javascript">
 	bkLib.onDomLoaded(function() { nicEditors.allTextAreas() });
-</script>		
+</script>	
+<script>
+  setTimeout(function() {
+    document.querySelector('#myDiv').classList.add('hide');
+  }, 3000);
+</script>	
 
 </head> 
 <body>
@@ -116,7 +121,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
   <div class="grid-form1">
   	       <h3>Update Page Data</h3>
   	        	  <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
-				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
+				else if($msg){?><div id="myDiv" class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
   	         <div class="tab-content">
 						<div class="tab-pane active" id="horizontal-form">
 							<form class="form-horizontal" name="package" method="post" enctype="multipart/form-data">
