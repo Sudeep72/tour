@@ -152,17 +152,17 @@ foreach($results as $result)
 					<div class="ban-bottom">
 				<div class="bnr-right">
 				<label class="inputLabel">From</label>
-				<input class="date" id="datepicker" type="text" placeholder="dd-mm-yyyy"  name="fromdate" required="">
+				<input class="date" id="datepicker" type="text" placeholder="dd-mm-yyyy"  name="fromdate" autocomplete="off" required="">
 			</div>
 			<div class="bnr-right">
 				<label class="inputLabel">To</label>
-				<input class="date" id="datepicker1" type="text" placeholder="dd-mm-yyyy" name="todate" required="">
+				<input class="date" id="datepicker1" type="text" placeholder="dd-mm-yyyy" name="todate" autocomplete="off" required="">
 			</div>
 			</div>
 						<div class="clearfix"></div>
 				<div class="grand">
 					<p>Grand Total</p>
-					<h3>USD.800</h3>
+					<h3>INR.800</h3>
 				</div>
 			</div>
 		<h3>Package Details</h3>
