@@ -7,7 +7,7 @@ paypal.Buttons({
         return actions.order.create({
             purchase_units : [{
                 amount: {
-                    value: '0.1'
+                    value: '1000'
                 }
             }]
         });
@@ -15,10 +15,10 @@ paypal.Buttons({
     onApprove: function (data, actions) {
         return actions.order.capture().then(function (details) {
             console.log(details)
-            window.location.replace("http://localhost:63342/tutorial/paypal/success.php")
+            window.location.href = "../payment/success.html";
         })
     },
     onCancel: function (data) {
-        window.location.replace("http://localhost:63342/tutorial/paypal/Oncancel.php")
+        window.location.href = "../payment/oncancel.html";
     }
 }).render('#paypal-payment-button');
