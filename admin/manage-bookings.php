@@ -167,7 +167,7 @@ foreach($results as $result)
 echo "Pending";
 $_SESSION["confirmed"] = false;
 }
-if($result->status==1)
+if($result->status==1)  
 {
 $_SESSION["confirmed"] = true;
 echo "Confirmed";
@@ -187,7 +187,7 @@ echo "Canceled by User at " .$result->upddate;
 {
 	?><td>Cancelled</td>
 <?php } else {?>
-<td><a href="manage-bookings.php?bkid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Do you really want to cancel booking')" >Cancel</a> / <a href="manage-bookings.php?bckid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Do you really want to confirm booking')" >Confirm</a></td>
+<td><a href="manage-bookings.php?bkid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Do you really want to cancel booking')" >Cancel</a> <?php if($_SESSION["confirmed"] == false){?> <a href="manage-bookings.php?bckid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Do you really want to confirm booking')" > / Confirm</a></td><?php }?>
 <?php }?>
 
 						  </tr>
