@@ -19,7 +19,7 @@ $query = $dbh->prepare($sql);
 $query->bindParam(':imgid',$imgid,PDO::PARAM_STR);
 $query->bindParam(':pimage',$pimage,PDO::PARAM_STR);
 $query->execute();
-$msg="Package Created Successfully";
+$msg="Package Image Updated Successfully";
 
 
 
@@ -29,7 +29,7 @@ $msg="Package Created Successfully";
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>TMS | Admin Package Creation</title>
+<title>TMS | Admin Package Image Updation</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Pooled Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -43,6 +43,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href='//fonts.googleapis.com/css?family=Roboto:700,500,300,100italic,100,400' rel='stylesheet' type='text/css'/>
 <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="css/icon-font.min.css" type='text/css' />
+<script>
+  setTimeout(function() {
+    document.querySelector('#myDiv').classList.add('hide');
+  }, 3000);
+</script>
   <style>
 		.errorWrap {
     padding: 10px;
@@ -83,8 +88,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!---->
   <div class="grid-form1">
   	       <h3>Update Package Image </h3>
-  	        	  <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
-				else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
+  	        	  <?php if($error){?><div id="myDiv" class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
+				else if($msg){?><div id="myDiv" class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
   	         <div class="tab-content">
 						<div class="tab-pane active" id="horizontal-form">
 							<form class="form-horizontal" name="package" method="post" enctype="multipart/form-data">

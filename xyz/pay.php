@@ -7,7 +7,8 @@ $trd=$_SESSION["trd"];
 
     
 
-<?php $sql = "SELECT * from tbltourpackages where packagename = '$trd'";
+<?php $sql = "SELECT tblbooking.FromDate as fdate,tblbooking.ToDate as tdate,tblbooking.status as stats,tbltourpackages.PackageName,tbltourpackages.PackageLocation,tbltourpackages.PackageImage,tbltourpackages.PackageLocation,tbltourpackages.PackagePrice from tblbooking join tbltourpackages on tblbooking.PackageId=tbltourpackages.PackageId where tbltourpackages.packagename = '$trd'";
+      
 $query = $dbh->prepare($sql);
 $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
@@ -15,7 +16,23 @@ $cnt=1;
 if($query->rowCount() > 0)
 {
 foreach($results as $result)
-{	?>
+{
+    if(($result->stats)==0){
+    	?>
+        <?php 
+            $date1=$result->fdate;
+            $date2=$result->tdate;
+            $diff = abs(strtotime($date2) - strtotime($date1));
+            $years = floor($diff / (365*60*60*24));
+            $months = floor(($diff - $years * 365*60*60*24) / (30*60*60*24));
+            $days = floor(($diff - $years * 365*60*60*24 - $months*30*60*60*24)/ (60*60*24));
+            if($days<=1){
+                $pri=$result->PackagePrice;
+            }
+            else{
+                $pri=($result->PackagePrice)*($days-0.5);
+            }
+        ?>
 			<div id="abc" style="display:none">
 				<div class="col-md-3 room-left wow fadeInLeft animated " data-wow-delay=".5s">
 				<img src="../admin/pacakgeimages/<?php echo htmlentities($result->PackageImage);?>" class="img-responsive" alt="" style="height:20rem;position:absolute;left:30rem">
@@ -28,21 +45,22 @@ foreach($results as $result)
 					<!-- <p><b>Features</b> <?php echo htmlentities($result->PackageFetures);?></p> -->
 				</div>
 				<div class="col-md-5 room-right wow fadeInRight animated" data-wow-delay=".5s">
-					<h4 style="position:absolute;right:-27rem;top:8rem"><b>INR</b> <?php echo htmlentities($result->PackagePrice);?></h4>
+					<h4 style="position:absolute;right:-27rem;top:8rem"><b>INR</b> <?php echo htmlentities($pri);?></h4>
 					<!-- <a href="package-details.php?pkgid=<?php echo htmlentities($result->PackageId);?>" class="view">Details</a> -->
 				</div>
                 
 				<div class="clearfix"></div>
 			</div>
             <?php
-            $a=($result->PackagePrice)/80;
+            $b=$pri/82.26;
+            $a = sprintf("%0.2f", $b);
             ?>
             <?php
             echo "<script> var myJSValue = '" . $a . "'; </script>";
 ?>
 
 <?php 
-}} ?>
+}} }?>
 
 <!DOCTYPE HTML>
 <html>

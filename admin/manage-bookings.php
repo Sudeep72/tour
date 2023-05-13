@@ -174,11 +174,11 @@ echo "Confirmed";
 }
 if($result->status==2 and  $result->cancelby=='a')
 {
-echo "Canceled by you at " .$result->upddate;
+echo "Cancelled by you at " .$result->upddate;
 } 
 if($result->status==2 and $result->cancelby=='u')
 {
-echo "Canceled by User at " .$result->upddate;
+echo "Cancelled by User at " .$result->upddate;
 
 }
 ?></td>
