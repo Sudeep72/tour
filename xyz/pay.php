@@ -34,7 +34,12 @@ foreach($results as $result)
                 
 				<div class="clearfix"></div>
 			</div>
-            
+            <?php
+            $a=$result->PackagePrice;
+            ?>
+            <?php
+            echo "<script> var myJSValue = '" . $a . "'; </script>";
+?>
 
 <?php 
 }} ?>

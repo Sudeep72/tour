@@ -1,3 +1,4 @@
+console.log(window.myJSValue);
 paypal.Buttons({
     style : {
         color: 'blue',
@@ -7,7 +8,7 @@ paypal.Buttons({
         return actions.order.create({
             purchase_units : [{
                 amount: {
-                    value: '1000'
+                    value: window.myJSValue
                 }
             }]
         });
