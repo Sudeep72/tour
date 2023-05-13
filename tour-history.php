@@ -213,7 +213,7 @@ echo "Cancelled by admin at " .$result->upddate;
 {
 	?><td>Cancelled</td>
 <?php } else {?>
-<td><a href="tour-history.php?bkid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Do you really want to cancel booking')" >Cancel</a> <?php if($confirmed == true){ ?> <a href="xyz/pay.php">
+<td><a href="tour-history.php?bkid=<?php echo htmlentities($result->bookid);?>" onclick="return confirm('Do you really want to cancel the booking')" >Cancel</a> <?php if($confirmed == true){ ?> <a href="xyz/pay.php">
          / Pay
     </a></td>
 <?php } ?>

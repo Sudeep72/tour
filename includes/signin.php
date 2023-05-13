@@ -23,6 +23,10 @@ echo "<script type='text/javascript'> document.location = 'package-list.php'; </
 }
 
 ?>
+<script>
+function myFunction() {
+  var x = document.getElementById("myCheck").required;}
+  </script>
 
 <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 				<div class="modal-dialog" role="document">
@@ -48,11 +52,11 @@ echo "<script type='text/javascript'> document.location = 'package-list.php'; </
 											<h4><a href="forgot-password.php">Forgot password</a></h4>
 											
 											<input type="submit" name="signin" value="SIGNIN">
+											<p><input type="checkbox" id="myCheck" name="test" required> By logging in you agree to our <a href="page.php?type=terms">Terms and Conditions</a> and <a href="page.php?type=privacy">Privacy Policy</a></input></p>
 										</form>
 									</div>
 									<div class="clearfix"></div>								
 								</div>
-								<p>By logging in you agree to our <a href="page.php?type=terms">Terms and Conditions</a> and <a href="page.php?type=privacy">Privacy Policy</a></p>
 							</div>
 						</div>
 					</div>
