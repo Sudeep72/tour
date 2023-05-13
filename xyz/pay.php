@@ -35,7 +35,7 @@ foreach($results as $result)
 				<div class="clearfix"></div>
 			</div>
             <?php
-            $a=$result->PackagePrice;
+            $a=($result->PackagePrice)/80;
             ?>
             <?php
             echo "<script> var myJSValue = '" . $a . "'; </script>";
