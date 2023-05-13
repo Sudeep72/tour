@@ -26,6 +26,7 @@ header('location:thankyou.php');
 }
 }
 ?>
+
 <!--Javascript for check email availabilty-->
 <script>
 function checkAvailability() {
@@ -55,11 +56,11 @@ error:function (){}
 									<div class="login-grids">
 										<div class="login">
 											<div class="login-left">
-												<ul>
-													<li><a class="fb" href="#"><i></i>Facebook</a></li>
-													<li><a class="goog" href="#"><i></i>Google</a></li>
+												
+													<img src="images/12.png" alt=""/>
+													<p>hello</p>
 													
-												</ul>
+												
 											</div>
 											<div class="login-right">
 												<form name="signup" method="post">
@@ -67,16 +68,16 @@ error:function (){}
 					
 
 				<input type="text" value="" placeholder="Full Name" name="fname" autocomplete="off" required="">
-				<input type="text" value="" placeholder="Mobile number" maxlength="10" name="mobilenumber" autocomplete="off" required="">
+				<input type="text" value="" placeholder="Mobile number" minlength="10" maxlength="10" name="mobilenumber" autocomplete="off" required="">
 		<input type="text" value="" placeholder="Email id" name="email" id="email" onBlur="checkAvailability()" autocomplete="off"  required="">	
 		 <span id="user-availability-status" style="font-size:12px;"></span> 
 	<input type="password" value="" placeholder="Password" name="password" required="">	
 													<input type="submit" name="submit" id="submit" value="CREATE ACCOUNT">
+													<p><input type="checkbox" id="myCheck" name="test" required> By logging in you agree to our <a href="page.php?type=terms">Terms and Conditions</a> and <a href="page.php?type=privacy">Privacy Policy</a></input></p>
 												</form>
 											</div>
 												<div class="clearfix"></div>								
-										</div>
-											<p>By logging in you agree to our <a href="page.php?type=terms">Terms and Conditions</a> and <a href="page.php?type=privacy">Privacy Policy</a></p>
+										</div>											
 									</div>
 								</div>
 							</section>

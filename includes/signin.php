@@ -23,10 +23,7 @@ echo "<script type='text/javascript'> document.location = 'package-list.php'; </
 }
 
 ?>
-<script>
-function myFunction() {
-  var x = document.getElementById("myCheck").required;}
-  </script>
+
 
 <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 				<div class="modal-dialog" role="document">
@@ -38,11 +35,8 @@ function myFunction() {
 							<div class="login-grids">
 								<div class="login">
 										<div class="login-left">
-												<ul>
-													<li><a class="fb" href="#"><i></i>Facebook</a></li>
-													<li><a class="goog" href="#"><i></i>Google</a></li>
-													
-												</ul>
+										<img src="images/12.png" alt=""/>
+													<p>hello</p>
 											</div>
 									<div class="login-right">
 										<form method="post">

@@ -54,7 +54,7 @@ include('includes/config.php');
 				<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"> <span>Summer come <br>early<br>
 						<h4>The countdown ends now. These last-minute <br> locations are turning up the heat.</h4><br>
 						<button onclick="scrollDown()" class="abc-btn ">
-							<p style="font-size:1rem">Let's explore</p>
+							<p style="font-size:1rem">Start Planning</p>
 						</button>
 					</span></h1>
 
