@@ -16,7 +16,7 @@ paypal.Buttons({
     onApprove: function (data, actions) {
         return actions.order.capture().then(function (details) {
             console.log(details)
-            window.location.href = "../payment/success.html";
+            window.location.href = "../payment/sucess.html";
         })
     },
     onCancel: function (data) {
