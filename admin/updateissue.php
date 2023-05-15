@@ -18,7 +18,7 @@ $query -> bindParam(':remark',$remark, PDO::PARAM_STR);
 $query-> bindParam(':iid',$iid, PDO::PARAM_STR);
 $query -> execute();
 
-$msg="Remark  successfully Updated";
+$msg="Remark successfully Updated";
 }
 
 
@@ -34,11 +34,16 @@ function f3()
 window.print(); 
 }
 </script>
+<script>
+  setTimeout(function() {
+    document.querySelector('#myDiv').classList.add('hide');
+  }, 3000);
+</script>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Update Compliant</title>
+<title>TH | Update Complaint</title>
 <link href="style.css" rel="stylesheet" type="text/css" />
 <link href="anuj.css" rel="stylesheet" type="text/css">
 </head>
@@ -57,8 +62,8 @@ window.print();
    
 
       <tr>
-      <td colspan="2" ">  <?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
-        else if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?></td>
+      <td colspan="2" >  <?php if($error){?><div id="myDiv" class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
+        else if($msg){?><div id="myDiv" class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?></td>
     
     </tr>
 
