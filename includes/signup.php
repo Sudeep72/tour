@@ -16,7 +16,7 @@ $query->execute();
 $lastInsertId = $dbh->lastInsertId();
 if($lastInsertId)
 {
-$_SESSION['msg']="You are Scuccessfully registered. Now you can login ";
+$_SESSION['msg']="Registered Successfully.";
 header('location:thankyou.php');
 }
 else 
