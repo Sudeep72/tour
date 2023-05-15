@@ -4,9 +4,6 @@ error_reporting(0);
 include('../includes/config.php');
 $trd=$_SESSION["trd"];
 ?>
-
-    
-
 <?php $sql = "SELECT tblbooking.FromDate as fdate,tblbooking.ToDate as tdate,tblbooking.status as stats,tbltourpackages.PackageName,tbltourpackages.PackageLocation,tbltourpackages.PackageImage,tbltourpackages.PackageLocation,tbltourpackages.PackagePrice from tblbooking join tbltourpackages on tblbooking.PackageId=tbltourpackages.PackageId where tbltourpackages.packagename = '$trd'";
       
 $query = $dbh->prepare($sql);

@@ -46,7 +46,7 @@ echo "<script type='text/javascript'> document.location = 'package-list.php'; </
 											<h4><a href="forgot-password.php">Forgot password</a></h4>
 											
 											<input type="submit" name="signin" value="SIGNIN">
-											<p><input type="checkbox" id="myCheck" name="test" required> By logging in you agree to our <a href="page.php?type=terms">Terms and Conditions</a> and <a href="page.php?type=privacy">Privacy Policy</a></input></p>
+											<!-- <p><input type="checkbox" id="myCheck" name="test" required> By logging in you agree to our <a href="page.php?type=terms">Terms and Conditions</a> and <a href="page.php?type=privacy">Privacy Policy</a></input></p> -->
 										</form>
 									</div>
 									<div class="clearfix"></div>								

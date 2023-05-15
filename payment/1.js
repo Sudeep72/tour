@@ -6,5 +6,5 @@ window.onload = function() {
 
 setTimeout(function() {
     window.location.href = "../page1.php";
-  }, 4000); 
+  }, 3500); 
   

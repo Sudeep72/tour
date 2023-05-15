@@ -189,7 +189,8 @@ foreach($results as $result)
 <?php $_SESSION["trd"]=$result->packagename;?>
 <!-- <?php $confirmed = $_SESSION["confirmed"];?> -->
 <?php $confirmed = false; ?>
-<td><?php if($result->status==0)
+<td><?php 
+if($result->status==0)
 {
 $confirmed = true;
 echo "Pending";

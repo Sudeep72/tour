@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Page Loader</title>
+    <title>Travel Hive | Admin</title>
     <style>
       
       #preloader {
