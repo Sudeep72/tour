@@ -18,7 +18,7 @@ $query -> bindParam(':remark',$remark, PDO::PARAM_STR);
 $query-> bindParam(':iid',$iid, PDO::PARAM_STR);
 $query -> execute();
 
-$msg="Remark successfully Updated";
+$msg="Remark  successfully Updated";
 }
 
 
@@ -43,7 +43,7 @@ window.print();
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>TH | Update Complaint</title>
+<title>TH | Update Compliant</title>
 <link href="style.css" rel="stylesheet" type="text/css" />
 <link href="anuj.css" rel="stylesheet" type="text/css">
 </head>
@@ -62,7 +62,7 @@ window.print();
    
 
       <tr>
-      <td colspan="2" >  <?php if($error){?><div id="myDiv" class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
+      <td colspan="2" ">  <?php if($error){?><div id="myDiv" class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
         else if($msg){?><div id="myDiv" class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?></td>
     
     </tr>
@@ -96,7 +96,7 @@ foreach($results as $result)
     </tr>
     <tr>
       <td class="fontkink">       </td>
-      <td  class="fontkink"> <input type="submit" name="submit2"  value="update"   size="40" style="cursor: pointer;" /></td>
+      <td  class="fontkink"> <input type="submit" name="submit2"  value="Update"   size="40" style="cursor: pointer;" /></td>
     </tr> 
     <?php } else { ?>
      <tr>
