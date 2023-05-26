@@ -44,12 +44,21 @@ foreach($results as $result)
 				<div class="col-md-5 room-right wow fadeInRight animated" data-wow-delay=".5s">
 					<h4 style="position:absolute;right:-27rem;top:8rem"><b>INR</b> <?php echo htmlentities($pri);?></h4>
 					<!-- <a href="package-details.php?pkgid=<?php echo htmlentities($result->PackageId);?>" class="view">Details</a> -->
+                    
 				</div>
+                <form>
+                        <label id="ups" style="position:absolute;left:57rem;top:23rem">Include User Preferences</label>
+                    <input type="checkbox" name="up" value="up" id="up" onclick="up()" style="position:absolute;left:55rem;top:23rem">
+                    </form>
                 
 				<div class="clearfix"></div>
-			</div>
+                
+			</div><?php
+                $abc = isset($_POST['up']);
+                $c = $abc ? ($pri + 150) : $pri;
+                ?>
             <?php
-            $b=$pri/82.26;
+            $b=$c/82.26;
             $a = sprintf("%0.2f", $b);
             ?>
             <?php
@@ -58,6 +67,7 @@ foreach($results as $result)
 
 <?php 
 }} }?>
+
 
 <!DOCTYPE HTML>
 <html>
@@ -78,14 +88,14 @@ foreach($results as $result)
 			document.getElementById("div2").style.display = "block";
             document.getElementById("abc").style.display = "block";
 		}, 3000);
-	</script> 
+	</script>
 <style>
    
 
     #paypal-payment-button{
         width: 2rem;
         position:absolute;
-        bottom:30rem;
+        bottom:23rem;
         left: 56rem;
     }
     #abc{
