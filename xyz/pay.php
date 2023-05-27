@@ -4,7 +4,7 @@ error_reporting(0);
 include('../includes/config.php');
 $trd=$_SESSION["trd"];
 ?>
-<?php $sql = "SELECT tblbooking.FromDate as fdate,tblbooking.ToDate as tdate,tblbooking.status as stats,tbltourpackages.PackageName,tbltourpackages.PackageLocation,tbltourpackages.PackageImage,tbltourpackages.PackageLocation,tbltourpackages.PackagePrice from tblbooking join tbltourpackages on tblbooking.PackageId=tbltourpackages.PackageId where tbltourpackages.packagename = '$trd'";
+<?php $sql = "SELECT tblbooking.FromDate as fdate,tblbooking.ToDate as tdate,tblbooking.status as stats,tbltourpackages.PackageName,tbltourpackages.PackageLocation,tbltourpackages.PackageImage,tbltourpackages.PackageLocation,tbltourpackages.PackagePrice,tblbooking.BookingId,tblbooking.Comment from tblbooking join tbltourpackages on tblbooking.PackageId=tbltourpackages.PackageId where tbltourpackages.packagename = '$trd'";
       
 $query = $dbh->prepare($sql);
 $query->execute();
@@ -67,6 +67,26 @@ foreach($results as $result)
 
 <?php 
 }} }?>
+<?php
+if($c>$pri){
+    $upr=150;
+}
+else{
+    $upr=0;
+}
+$p=$result->BookingId;
+$q=$result->PackageName;
+$r=$result->fdate;
+$s=$result->tdate;
+$t=$result->Comment;
+$u=$pri;
+$v=$upr;
+$w=$u+$v;
+$sql="Insert into pdf values('$p','$q','$r','$s','$t','$u','$v','$w')";
+$query = $dbh->prepare($sql);
+$query->execute();
+?>
+
 
 
 <!DOCTYPE HTML>
