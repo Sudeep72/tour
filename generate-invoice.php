@@ -20,7 +20,7 @@ if(isset($_REQUEST['bkid'])) {
         $pdf = new FPDF();
         $pdf->AddPage();
 
-        // Set font and style
+        
         $pdf->SetFont('Arial', 'B', 16);
         $pdf->Cell(0, 10, 'Invoice', 0, 1, 'C');
 
@@ -31,9 +31,9 @@ if(isset($_REQUEST['bkid'])) {
         $pdf->Cell(40, 10, 'Package Name:', 0, 0);
         $pdf->Cell(0, 10, $result['PackageName'], 0, 1);
 
-        // Add other fields and details as needed
+        $pdf->Cell(40, 10, 'Paid', 0, 0);
 
-        $pdf->Output('invoice.pdf', 'D'); // Download the generated PDF file
+        $pdf->Output('invoice.pdf', 'D'); 
     } else {
         echo 'No booking found.';
     }
