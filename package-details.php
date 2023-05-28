@@ -175,8 +175,9 @@ foreach($results as $result)
 				<ul>
 				
 					<li class="spe">
-						<label class="inputLabel">User Preferences &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(Enable Checkbox during Checkout if User Preferences Needed!) [Additional Charges Apply!!]</label>
-						<input class="special" type="text" name="comment" required="">
+						<label class="inputLabel">User Preferences &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(Put '<b style="color:blue;">-</b>' if User Preferences not needed)</label>
+						<input class="special" type="text" name="comment" required=""><br>
+						<br><label>(Tick the Checkbox during Checkout only if User Preferences Needed!) [Additional Charges Apply!!]</label>
 					</li>
 					<?php if($_SESSION['login'])
 					{?>

@@ -9,7 +9,7 @@ if(isset($_REQUEST['bkid'])) {
 
     $sql = "SELECT tblbooking.*, tbltourpackages.PackageName, pdf.* FROM tblbooking 
     JOIN tbltourpackages ON tbltourpackages.PackageId = tblbooking.PackageId
-    JOIN pdf ON pdf.Comments = tblbooking.Comment
+    JOIN pdf ON pdf.BkiId = tblbooking.BookingId
     WHERE UserEmail=:email AND tblbooking.BookingId=:bid";
     $query = $dbh->prepare($sql);
     $query->bindParam(':email', $email, PDO::PARAM_STR);
@@ -42,13 +42,13 @@ if(isset($_REQUEST['bkid'])) {
         $pdf->Cell(0, 10, $result['Comments'], 0, 1);
 
         $pdf->Cell(40, 10, 'Price:', 0, 0);
-        $pdf->Cell(0, 10, $result['Price'], 0, 1);
+        $pdf->Cell(0, 10, 'INR' .' '. $result['Price'], 0, 1);
 
         $pdf->Cell(40, 10, 'Preferences:', 0, 0);
-        $pdf->Cell(0, 10, $result['User Pref'], 0, 1);
+        $pdf->Cell(0, 10, 'INR' .' '.$result['User Pref'], 0, 1);
 
         $pdf->Cell(40, 10, 'Total:', 0, 0);
-        $pdf->Cell(0, 10, $result['Total'], 0, 1);
+        $pdf->Cell(0, 10, 'INR' .' '. $result['Total'], 0, 1);
 
         $pdf->Cell(40, 10, 'Payment Status:', 0, 0);
         $pdf->Cell(0, 10, 'Paid', 0, 1);

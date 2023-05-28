@@ -4,7 +4,7 @@ error_reporting(0);
 include('../includes/config.php');
 $trd=$_SESSION["trd"];
 ?>
-<?php $sql = "SELECT tblbooking.FromDate as fdate,tblbooking.ToDate as tdate,tblbooking.status as stats,tbltourpackages.PackageName,tbltourpackages.PackageLocation,tbltourpackages.PackageImage,tbltourpackages.PackageLocation,tbltourpackages.PackagePrice,tblbooking.BookingId,tblbooking.Comment from tblbooking join tbltourpackages on tblbooking.PackageId=tbltourpackages.PackageId where tbltourpackages.packagename = '$trd'";
+<?php $sql = "SELECT tblbooking.FromDate as fdate,tblbooking.Comment as com,tblbooking.ToDate as tdate,tblbooking.status as stats,tbltourpackages.PackageName,tbltourpackages.PackageLocation,tbltourpackages.PackageImage,tbltourpackages.PackageLocation,tbltourpackages.PackagePrice,tblbooking.BookingId,tblbooking.Comment from tblbooking join tbltourpackages on tblbooking.PackageId=tbltourpackages.PackageId where tbltourpackages.packagename = '$trd'";
       
 $query = $dbh->prepare($sql);
 $query->execute();
@@ -46,27 +46,27 @@ foreach($results as $result)
 					<!-- <a href="package-details.php?pkgid=<?php echo htmlentities($result->PackageId);?>" class="view">Details</a> -->
                     
 				</div>
+                
+                <div id="abbb">
                 <form>
                         <label id="ups" style="position:absolute;left:57rem;top:23rem">Include User Preferences</label>
-                    <input type="checkbox" name="up" value="up" id="up" onclick="up()" style="position:absolute;left:55rem;top:23rem">
+                    <input type="checkbox" name="up" value="up" id="up"  style="position:absolute;left:55rem;top:23rem">
                     </form>
+                </div>
                 
 				<div class="clearfix"></div>
                 
-			</div><?php
-                $abc = isset($_POST['up']);
-                $c = $abc ? ($pri + 150) : $pri;
-                ?>
+			</div>
             <?php
-            $b=$c/82.26;
-            $a = sprintf("%0.2f", $b);
+            if($result->com== '-'||$result->com=='n'||$result->com=='no'||$result->com=='No'||$result->com=='NO'||$result->com=='N'){
+                $c=$pri;
+            }
+            else{
+                $c=$pri+150;
+            }
             ?>
-            <?php
-            echo "<script> var myJSValue = '" . $a . "'; </script>";
-?>
 
-<?php 
-}} }?>
+
 <?php
 if($c>$pri){
     $upr=150;
@@ -86,6 +86,17 @@ $sql="Insert into pdf values('$p','$q','$r','$s','$t','$u','$v','$w')";
 $query = $dbh->prepare($sql);
 $query->execute();
 ?>
+            <?php
+            $b=$c/82.26;
+            $a = sprintf("%0.2f", $b);
+            ?>
+            <?php
+            echo "<script> var myJSValue = '" . $a . "'; </script>";
+?>
+
+<?php 
+}} }?>
+
 
 
 
