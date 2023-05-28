@@ -38,7 +38,7 @@ label{
 }
 /*-- top-header --*/
 .logo a {
-    color: #3F84B1;
+    color: #00ccb4;
     letter-spacing: 1px;
     font-size: 2em;
     font-weight: 400;
@@ -71,7 +71,7 @@ i.fa.fa-home {
     font-size: 24px;
 }
 .top-header {
-    background-color: #3F84B1;
+    background-color: #00ccb4;
     border-bottom: 0 none;
 	height: 36px;
     line-height: 35px;
@@ -1570,7 +1570,7 @@ button.subbtn:focus, button.subbtn:hover {
  margin-top:20px;
 }
 .login-right input[type="submit"]:hover {
-	background:#3F84B1;
+	background:#00ccb4;
 }
 .login-grids p {
     font-size: 12px;
@@ -1692,7 +1692,7 @@ button.subbtn:focus, button.subbtn:hover {
     line-height: 35px;
 }
 .app-right h3 span {
-	color:#3F84B1;
+	color:#00ccb4;
 	margin:0 7px;
 }
 .app-right p {
@@ -1750,7 +1750,7 @@ button.subbtn:focus, button.subbtn:hover {
   line-height: 1.8em;
 }
 .services-icon {
-  background: #3F84B1;
+  background: #00ccb4;
   width: 120px;
   height: 120px;
   line-height: 136px;
@@ -1808,7 +1808,7 @@ ul.callbacks_tabs.callbacks2_tabs {
 	color:#FDF2E9;
 }
 .comments-list h3 a:hover{
-	color:#3F84B1;
+	color:#00ccb4;
 }
 .comments-list ul{
 	padding:1.5em 0 2em; 
@@ -1857,7 +1857,7 @@ ul.paging{
 }
 .popular h3, .subscribe h3, .categories h3, .instagram h2, .tags h3 {
     padding: 1em;
-    background: #3F84B1;
+    background: #00ccb4;
     color: #fff;
     font-size: 1.5em;
     text-align: center;
@@ -1878,7 +1878,7 @@ ul.paging{
 }
 .popular-right h5 a{
 	font-size:1.5em;
-	color:#3F84B1;
+	color:#00ccb4;
 	text-decoration:none;
 	text-transform:capitalize;
 }
@@ -1929,7 +1929,7 @@ ul.paging{
 	width:100%;
 }
 .subscribe input[type="submit"]:hover{
-	background:#3F84B1;
+	background:#00ccb4;
 }
 .categories ul li{
 	padding-left: 2em;
@@ -1958,10 +1958,10 @@ ul.paging{
 	margin: 0 0px 9px;
 }
 .tags ul li a {
-    border: 1px solid #3F84B1;
+    border: 1px solid #00ccb4;
     padding: 3px 12px;
     font-size: 14px;
-    color: #3F84B1;
+    color: #00ccb4;
     text-decoration: none;
 }
 .recent-comments h3 {
@@ -2017,7 +2017,7 @@ ul.paging{
 }
 .recent-comments-grid-right h4 a {
     font-size: 1em;
-    color: #3F84B1;
+    color: #00ccb4;
     text-decoration: none;
 }
 .recent-comments-grid-right h4 a:hover{
@@ -2086,7 +2086,7 @@ ul.paging{
 	text-align:center;
 }
 .leave-comment input[type="submit"]:hover{
-	background:#3F84B1;
+	background:#00ccb4;
 }
 /*-- //single1 --*/
 .footer-social-icons ul li {
@@ -2225,7 +2225,7 @@ ul.paging{
 	text-decoration:none;
 	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size:22px;
-	color:#3F84B1;
+	color:#00ccb4;
 	opacity: 1;
 	}
 
