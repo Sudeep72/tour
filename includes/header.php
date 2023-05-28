@@ -64,20 +64,20 @@
 <div class="footer-btm wow fadeInLeft animated" data-wow-delay=".5s" style="background-color:#fcdbc1">
 	<div class="container" >
 	<div class="navigation">
-			<nav class="navbar navbar-default">
+			<nav class="navbar navbar-default" style="color:#333333;">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
 				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
+					<span class="icon-bar" style="background-color:#333333;"></span>
+					<span class="icon-bar" style="background-color:#333333;"></span>
+					<span class="icon-bar" style="background-color:#333333;"></span>
 				  </button>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1" style="background-color:#fcdbc1">
 					<nav class="cl-effect-1">
-						<ul class="nav navbar-nav">
+						<ul class="nav navbar-nav" >
 							<li><a href="page1.php" style="transition: all 0.3s ease-in-out;color:#333333;">Home</a></li>
 							<li><a href="page.php?type=aboutus" style="transition: all 0.3s ease-in-out;color:#333333;">About</a></li>
 								<li><a href="package-list.php" style="transition: all 0.3s ease-in-out;color:#333333;">Tour Packages</a></li>
@@ -90,7 +90,7 @@
 {?>
 								<li style="color:#333333;">Need Help? / <a href="#" data-toggle="modal" data-target="#myModal3" style="color:#333333;">Write Us </a>  </li>
 								<?php } else { ?>
-								<li><a href="enquiry.php"> Enquiry </a>  </li>
+								<li><a href="enquiry.php" style="color:#333333;"> Enquiry </a>  </li>
 								<?php } ?>
 								<div class="clearfix"></div>
 

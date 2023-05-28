@@ -160,7 +160,7 @@ include('includes/config.php');
 						<a href="#"><i class="glyphicon glyphicon-list-alt"></i></a>
 					</div>
 					<div class="rou-rgt wow fadeInDown animated" data-wow-delay=".5s">
-						<h3>80000</h3>
+						<h3>8000</h3>
 						<p>Enquiries</p>
 					</div>
 					<div class="clearfix"></div>
@@ -170,7 +170,7 @@ include('includes/config.php');
 						<a href="#"><i class="fa fa-user"></i></a>
 					</div>
 					<div class="rou-rgt">
-						<h3>1900</h3>
+						<h3>2000</h3>
 						<p>Registered users</p>
 					</div>
 					<div class="clearfix"></div>
@@ -180,8 +180,8 @@ include('includes/config.php');
 						<a href="#"><i class="fa fa-ticket"></i></a>
 					</div>
 					<div class="rou-rgt">
-						<h3>7,00,00,000+</h3>
-						<p>Booking</p>
+						<h3>70,000+</h3>
+						<p>Bookings</p>
 					</div>
 					<div class="clearfix"></div>
 				</div>
