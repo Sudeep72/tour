@@ -35,7 +35,7 @@ echo "<script type='text/javascript'> document.location = 'thankyou.php'; </scri
 							<form name="help" method="post">
 								<div class="modal-body modal-spa">
 									<div class="writ">
-										<h4>HOW CAN WE HELP YOU</h4>
+										<h4>HOW CAN WE HELP YOU!</h4>
 											<ul>
 												
 												<li class="na-me">
@@ -49,7 +49,7 @@ echo "<script type='text/javascript'> document.location = 'thankyou.php'; </scri
 												</li>
 											
 												<li class="descrip">
-									<input class="special" type="text" placeholder="description"  name="description" required="">
+									<input class="special" type="text" placeholder="Description"  name="description" required="">
 												</li>
 													<div class="clearfix"></div>
 											</ul>

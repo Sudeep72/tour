@@ -29,7 +29,7 @@ $msg="Package Image Updated Successfully";
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>TMS | Admin Package Image Updation</title>
+<title>TH | Admin Package Image Updation</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Pooled Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
