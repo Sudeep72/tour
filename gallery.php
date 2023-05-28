@@ -37,11 +37,11 @@ include('includes/config.php');
 		<p>Welcome to our gallery! Below are some of the beautiful places you can visit.</p>
 		<div class="gallery-container">
 			<div class="gallery-item">
-				<img src="images/gallery/i1.jpg" alt="Image 1">
+				<img src="images/gallery/i1.jpg" alt="Image 1" style="width:1500px;height:auto;border-radius: 10px;">
 				<p>Taj Mahal</p>
 			</div>
 			<div class="gallery-item">
-				<img src="images/gallery/i2.jpg" alt="Image 2">
+				<img src="images/gallery/i2.jpg" alt="Image 2" style="width:1500px;height:auto;border-radius: 10px;">
 				<p>Spain</p>
 			</div>
 			<div class="gallery-item">
