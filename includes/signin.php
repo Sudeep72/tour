@@ -36,16 +36,16 @@ echo "<script type='text/javascript'> document.location = 'package-list.php'; </
 								<div class="login">
 										<div class="login-left">
 										<img src="images/12.png" alt="" style="border-radius: 10px;"/>
-													<p>hello</p>
+													<p style="font-size:large;color:black"><b>Adventure awaits!</b></p>
 											</div>
 									<div class="login-right">
 										<form method="post">
-											<h3>Sign In</h3>
+											<h3 style="color:#333333;">Sign In</h3>
 	<input type="text" name="email" id="email" placeholder="Enter your Email"  required="">	
 	<input type="password" name="password" id="password" placeholder="Password" value="" required="">	
-											<h4><a href="forgot-password.php">Forgot password</a></h4>
+											<h4><a href="forgot-password.php" style="color:#333333;">Forgot password</a></h4>
 											
-											<input type="submit" name="signin" value="SIGNIN">
+											<input type="submit" name="signin" value="SIGNIN" style="color:#333333;">
 											<!-- <p><input type="checkbox" id="myCheck" name="test" required> By logging in you agree to our <a href="page.php?type=terms">Terms and Conditions</a> and <a href="page.php?type=privacy">Privacy Policy</a></input></p> -->
 										</form>
 									</div>

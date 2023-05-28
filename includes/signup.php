@@ -180,13 +180,13 @@ error:function (){}
      
 		</div>
     		</div>
-													<p>hello</p>
+        <p style="font-size:large;color:black"><b>Helping people make memories!</b></p>
 													
 												
 											</div>
 											<div class="login-right">
 												<form name="signup" method="post">
-													<h3>Create your account </h3>
+													<h3 style="color:#333333;">Create your account </h3>
 					
 
 				<input type="text" value="" placeholder="Full Name" name="fname" autocomplete="off" required="">
@@ -194,8 +194,8 @@ error:function (){}
 		<input type="text" value="" placeholder="Email id" name="email" id="email" onBlur="checkAvailability()" autocomplete="off"  required="">	
 		 <span id="user-availability-status" style="font-size:12px;"></span> 
 	<input type="password" value="" placeholder="Password" name="password" required="">	
-													<input type="submit" name="submit" id="submit" value="CREATE ACCOUNT">
-													<p><input type="checkbox" id="myCheck" name="test" required> By logging in you agree to our <a href="page.php?type=terms">Terms and Conditions</a> and <a href="page.php?type=privacy">Privacy Policy</a></input></p>
+													<input type="submit" name="submit" id="submit" value="CREATE ACCOUNT" style="color:#333333;">
+													<p><input type="checkbox" id="myCheck" name="test" required style="color:#333333;"> By logging in you agree to our <a href="page.php?type=terms" style="color:#333333;">Terms and Conditions</a> and <a href="page.php?type=privacy" style="color:#333333;">Privacy Policy</a></input></p>
 												</form>
 											</div>
 												<div class="clearfix"></div>								

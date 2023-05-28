@@ -1555,7 +1555,7 @@ button.subbtn:focus, button.subbtn:hover {
 	color:#FDF2E9;
 }
 .login-right input[type="submit"] {
-  background:#FDF2E9;
+  background:#44525d;
   color: #fff;
   font-size: 20px;
   border: none;
