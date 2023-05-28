@@ -35,7 +35,7 @@ echo "<script type='text/javascript'> document.location = 'package-list.php'; </
 							<div class="login-grids">
 								<div class="login">
 										<div class="login-left">
-										<img src="images/12.png" alt="" style="border-radius: 10px;"/>
+										<img src="images/s5.jfif" alt="" style="width:270px;height:300px;border-radius: 10px;"/>
 													<p style="font-size:large;color:black"><b>Adventure awaits!</b></p>
 											</div>
 									<div class="login-right">

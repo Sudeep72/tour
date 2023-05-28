@@ -166,16 +166,16 @@ error:function (){}
         <!--radio buttons end-->
         <!--slide images start-->
         <div class="slide first">
-          <img src="images/12.png" alt="">
+          <img src="images/s1.png" alt="">
         </div>
         <div class="slide">
-          <img src="images/22.png" alt="">
+          <img src="images/s2.jfif" alt="">
         </div>
         <div class="slide">
-          <img src="images/12.png" alt="">
+          <img src="images/s3.jfif" alt="">
         </div>
         <div class="slide">
-          <img src="images/22.png" alt="">
+          <img src="images/s4.jfif" alt="">
         </div>
      
 		</div>
