@@ -130,10 +130,10 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 									<div class="col-sm-8">
 									   <select name="menu1" onChange="MM_jumpMenu('parent',this,0)">
                   <option value="" selected="selected" class="form-control">***Select One***</option>
-                  <option value="manage-pages.php?type=terms">terms and condition</option>
-                  <option value="manage-pages.php?type=privacy">privacy and policy</option>
-                  <option value="manage-pages.php?type=aboutus">aboutus</option> 
-                  <option value="manage-pages.php?type=contact">Contact us</option>
+                  <option value="manage-pages.php?type=terms">Terms and Condition</option>
+                  <option value="manage-pages.php?type=privacy">Privacy Policy</option>
+                  <option value="manage-pages.php?type=aboutus">About Us</option> 
+                  <option value="manage-pages.php?type=contact">Contact Us</option>
                 </select>
 									</div>
 								</div>
@@ -144,15 +144,15 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 			
 			switch($_GET['type'])
 			{
-				case "terms" :
+				case "Terms" :
 									echo "Terms and Conditions";
 									break;
 				
-				case "privacy" :
+				case "Privacy" :
 									echo "Privacy And Policy";
 									break;
 				
-				case "aboutus" :
+				case "Aboutus" :
 									echo "About US";
 									break;
 				case "software" :
@@ -173,7 +173,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 				case "candc" :
 									echo "Super Brand";
 									break;
-				case "contact" :
+				case "Contact" :
 									echo "Contact Us";
 									break;
 				
