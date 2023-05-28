@@ -116,7 +116,7 @@ $error="Something went wrong. Please try again";
 <?php include('includes/header.php');?>
 <div class="banner-3">
 	<div class="container">
-		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"> TMS -Package Details</h1>
+		<h1 class="wow zoomIn animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: zoomIn;"> TMS - Package Details</h1>
 	</div>
 </div>
 <!--- /banner ---->
@@ -145,7 +145,8 @@ foreach($results as $result)
 			</div>
 			<div class="col-md-8 selectroom_right wow fadeInRight animated" data-wow-delay=".5s">
 				<h2><?php echo htmlentities($result->PackageName);?></h2>
-				<p class="dow">#PKG-<?php echo htmlentities($result->PackageId);?></p>
+				<br>
+				<!-- <p class="dow">#PKG-<?php// echo htmlentities($result->PackageId);?></p> -->
 				<p><b>Package Type :</b> <?php echo htmlentities($result->PackageType);?></p>
 				<p><b>Package Location :</b> <?php echo htmlentities($result->PackageLocation);?></p>
 					<p><b>Features</b> <?php echo htmlentities($result->PackageFetures);?></p>
@@ -177,7 +178,7 @@ foreach($results as $result)
 					<li class="spe">
 						<label class="inputLabel">User Preferences &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(Put '<b style="color:blue;">-</b>' if User Preferences not needed)</label>
 						<input class="special" type="text" name="comment" required=""><br>
-						<br><label>(Tick the Checkbox during Checkout only if User Preferences Needed!) [Additional Charges Apply!!]</label>
+						<br><label>(Tick the Checkbox during Checkout only if User Preferences are Needed! Additional Charges Apply.)</label>
 					</li>
 					<?php if($_SESSION['login'])
 					{?>
