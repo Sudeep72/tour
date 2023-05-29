@@ -40,9 +40,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="css/style.css" rel="stylesheet">
-	<style>
-
-	</style>
+	<link rel="icon" type="image/x-icon" href="../images/fav.ico">
 </head>
 <div class="header" style="background-color:#FDF2E9;">
 	<div class="container">

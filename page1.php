@@ -31,6 +31,7 @@ include('includes/config.php');
 	<script src="js/bootstrap.min.js"></script>
 	<!--animate-->
 	<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+	<link rel="icon" type="image/x-icon" href="images/fav.png">
 	<script src="js/wow.min.js"></script>
 	<script>
 		new WOW().init();

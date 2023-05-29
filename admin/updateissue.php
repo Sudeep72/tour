@@ -45,6 +45,7 @@ window.print();
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>TH | Update Compliant</title>
 <link href="style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" type="image/x-icon" href="../images/fav.png">
 <link href="anuj.css" rel="stylesheet" type="text/css">
 </head>
 <body>

@@ -40,6 +40,7 @@ echo "<script type='text/javascript'> document.location = 'load.php'; </script>"
 <!-- Graph CSS -->
 <link href="css/font-awesome.css" rel="stylesheet">
 <link rel="stylesheet" href="css/jquery-ui.css"> 
+<link rel="icon" type="image/x-icon" href="../images/fav.png">
 <!-- jQuery -->
 <script src="js/jquery-2.1.4.min.js"></script>
 <!-- //jQuery -->
