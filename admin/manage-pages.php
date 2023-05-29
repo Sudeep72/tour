@@ -131,10 +131,10 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 									<div class="col-sm-8">
 									   <select name="menu1" onChange="MM_jumpMenu('parent',this,0)">
                   <option value="" selected="selected" class="form-control">***Select One***</option>
-                  <option value="manage-pages.php?type=terms">Terms and Condition</option>
-                  <option value="manage-pages.php?type=privacy">Privacy Policy</option>
-                  <option value="manage-pages.php?type=aboutus">About Us</option> 
-                  <option value="manage-pages.php?type=contact">Contact Us</option>
+                  <option value="manage-pages.php?type=Terms">Terms and Condition</option>
+                  <option value="manage-pages.php?type=Privacy">Privacy Policy</option>
+                  <option value="manage-pages.php?type=Aboutus">About Us</option> 
+                  <option value="manage-pages.php?type=Contact">Contact Us</option>
                 </select>
 									</div>
 								</div>
@@ -201,7 +201,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 
 
 <div class="form-group">
-									<label for="focusedinput" class="col-sm-2 control-label">Package Details</label>
+									<label for="focusedinput" class="col-sm-2 control-label">Information</label>
 									<div class="col-sm-8">
 
 
