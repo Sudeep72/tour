@@ -109,6 +109,7 @@ $query->execute();
 <link href="../css/bootstrap.css" rel='stylesheet' type='text/css' />
 <link href="abc.css" rel="stylesheet">
 <link href="../css/font-awesome.css" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="../images/fav.png">
 <script src="../js/jquery-1.12.0.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script>
