@@ -20,7 +20,7 @@ $query->execute();
 $lastInsertId = $dbh->lastInsertId();
 if($lastInsertId)
 {
-$msg="Enquiry  Successfully submited";
+$msg="Enquiry  Successfully submitted. We will contact you shortly.";
 }
 else 
 {

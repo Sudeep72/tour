@@ -19,7 +19,7 @@ $query -> bindParam(':status',$status, PDO::PARAM_STR);
 $query-> bindParam(':eid',$eid, PDO::PARAM_STR);
 $query -> execute();
 
-$msg="Enquiry  successfully read";
+$msg="Enquiry  successfully read.";
 }
 
 
@@ -156,7 +156,7 @@ foreach($results as $result)
 	?><td>Read</td>
 <?php } else {?>
 
-<td><a href="manage-enquires.php?eid=<?php echo htmlentities($result->id);?>" onclick="return confirm('Do you really want to read')" >Pending</a>
+<td><a href="manage-enquires.php?eid=<?php echo htmlentities($result->id);?>" onclick="return confirm('Do you really want to mark the enquiry as read?')" >Pending</a>
 </td>
 <?php } ?>
 </tr>

@@ -161,7 +161,7 @@ foreach($results as $result)
 			</div>
 						<div class="clearfix"></div>
 				<div class="grand">
-					<p>Grand Total</p>
+					<p>Grand Total (per day)</p>
 					<h3>INR <?php echo htmlentities($result->PackagePrice)?></h3>
 				</div>
 			</div>

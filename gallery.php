@@ -37,21 +37,58 @@ include('includes/config.php');
 		<p>Welcome to our gallery! Below are some of the beautiful places you can visit.</p>
 		<div class="gallery-container">
 			<div class="gallery-item">
-				<img src="images/gallery/i1.jpg" alt="Image 1" style="width:1500px;height:auto;border-radius: 10px;">
-				<p>Taj Mahal</p>
+				<img src="images/gallery/tajmahal.jpeg" alt="Image 1" style="border-radius: 10px;">
+				<p>Taj Mahal, India</p>
 			</div>
 			<div class="gallery-item">
-				<img src="images/gallery/i2.jpg" alt="Image 2" style="width:1500px;height:auto;border-radius: 10px;">
-				<p>Spain</p>
+				<img src="images/gallery/bavaria.jpeg" alt="Image 2" style="border-radius: 10px;">
+				<p>Bavaria, Germany</p>
 			</div>
 			<div class="gallery-item">
-				<img src="images/gallery/i3.jpg" alt="Image 3">
-				<p>Spain</p>
+				<img src="images/gallery/coorg.jpeg" alt="Image 3" style="border-radius: 10px;">
+				<p>Coorg, India</p>
 			</div>
 			<div class="gallery-item">
-				<img src="images/gallery/i4.jpg" alt="Image 4">
-				<p>Spain</p>
+				<img src="images/gallery/egypt.jpeg" alt="Image 4" style="border-radius: 10px;">
+				<p>Egypt</p>
 			</div>
+			<div class="gallery-item">
+				<img src="images/gallery/eiffel.jpeg" alt="Image 5" style="border-radius: 10px;">
+				<p>Eiffel Tower, France</p>
+			</div>
+			<div class="gallery-item">
+				<img src="images/gallery/indonesia.jpeg" alt="Image 6" style="border-radius: 10px;">
+				<p>Indonesia</p>
+			</div>
+			<div class="gallery-item">
+				<img src="images/gallery/kerala.jpeg" alt="Image 7" style="border-radius: 10px;">
+				<p>Kerala, India</p>
+			</div>
+			<div class="gallery-item">
+				<img src="images/gallery/kyrgyz.jpeg" alt="Image 8" style="border-radius: 10px;">
+				<p>Kyrgyzstan</p>
+			</div>
+			<div class="gallery-item">
+				<img src="images/gallery/manali.jpeg" alt="Image 9" style="border-radius: 10px;">
+				<p>Manali, India</p>
+			</div>
+			<div class="gallery-item">
+				<img src="images/gallery/opera.jpeg" alt="Image 10" style="border-radius: 10px;">
+				<p>Opera House, Sydney</p>
+			</div>
+			<div class="gallery-item">
+				<img src="images/gallery/philippines.jpeg" alt="Image 11" style="border-radius: 10px;">
+				<p>Philippines</p>
+			</div>
+			<div class="gallery-item">
+				<img src="images/gallery/rome.jpeg" alt="Image 12" style="border-radius: 10px;">
+				<p>Rome, Italy</p>
+			</div>
+			<div class="gallery-item">
+				<img src="images/gallery/uyuni.jpeg" alt="Image 13" style="border-radius: 10px;">
+				<p>Uyuni Salt Flats, Bolivia</p>
+			</div>
+
 		</div>
 	</div>
 <!--- /contact ---->
